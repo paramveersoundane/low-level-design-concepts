@@ -24,7 +24,7 @@ public class CalculateTaxesClient {
 
         double totalTaxes = 0;
         for (Employee employee: employees){
-
+        	
             // compute individual tax
             double tax = TaxCalculator.calculate(employee);
             String formattedTax = currencyFormatter.format(tax);
